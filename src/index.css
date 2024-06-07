@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.clockMain {
+    width: 400px;
+    height: 400px;
+    background-image: url("./assets/images/clock-bg.png");
+    background-size: 400px 400px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.minutePoints {
+    position: absolute;
+    width: 300px;
+    top: 45px;
+    left: 45px;
+}
+
+.hourPoints {
+    position: absolute;
+    width: 300px;
+    top: 45px;
+    left: 45px;
+}
+
+.clockMain .clockHandsMain {
+    display: flex;
+    width: inherit;
+    position: relative;
+}
+
+.clockMain .clockHandsMain .hourHand {
+    width: 80px;
+    height: 80px;
+    left: 130px;
+    top: 140px;
+    position: absolute;
+}
+
+.clockMain .clockHandsMain .minuteHand {
+    width: 100px;
+    height: 100px;
+    left: 180px;
+    top: 120px;
+    position: absolute;
+}
+
+.clockMain .clockHandsMain .secondHand {
+    width: 120px;
+    height: 120px;
+    left: 136px;
+    top: 70px;
+    position: absolute;
+    /*rotate: -134deg;*/
+}
